@@ -1,0 +1,128 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020215044
+Nombre de usuario: DESKTOP-J08R123\Felipe
+Usuario RunAs: DESKTOP-J08R123\Felipe
+Nombre de la configuración: 
+Máquina: DESKTOP-J08R123 (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell
+Id. de proceso: 17196
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es ..\taller-docker-semana13\audit_session.log
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker build --build-arg STUDENT_ID="908404" -t eco-air-backend:1.0.0 .
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker history --human --format "table {{.Size}}\t{{.CreatedBy}}" eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker top eco_air_active -o pid,user,comm
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker exec eco_air_active id
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker exec eco_air_active touch /etc/crontab_fake
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker exec eco_air_active sh -c "command -v mvn"
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker exec eco_air_active sh -c "find / -name '*.java' 2>/dev/null"
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8081:8080 eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker top eco_air_active -o pid,user,comm
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker ps -a
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker rm -f eco_air_active
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 eco-air-backend:1.0.
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 eco-air-backend:1.0.
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker images
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker rm -f eco_air_active
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker images
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker ps -a
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker logs eco_air_active
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker ps
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker ps -a
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker logs eco_air_active
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker start eco_air_active
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker ps
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker logs eco_air_active
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 -m 256m eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker logs --timestamps eco_air_active | findstr "Started EcoAirApplication"
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 eco-air-active:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 eco-air-backend:1.0.0.
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker ps
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker top eco_air_active -o pid,user,comm
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker exec eco_air_active id
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker exec eco_air_active touch /etc/crontab_fake
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker exec eco_air_active touch /etc/crontab_fake
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker exec eco_air_active sh -c "find / -name '*.java' 2>/dev/null"
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_crash -m 48m eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker inspect eco_air_crash --format="Status: {{.State.Status}} | ExitCode: {{.State.ExitCode}} | OOMKilled: {{.State.OOMKilled}}"
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker rm -f eco_air_active
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 -m 256m eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 -m 384m eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker run -d --name eco_air_active -p 8080:8080 -m 512m eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker stats --no-stream eco_air_active
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker inspect --format="{{.Id}}" eco-air-backend:1.0.0
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker exec eco_air_active env | findstr OPERATOR_ID
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> docker stats --no-stream
+
+PS C:\Users\Felipe\Desktop\taller-profe-dani\eco-air-backend> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020223319
+**********************
